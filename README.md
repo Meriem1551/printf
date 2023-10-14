@@ -1,4 +1,1 @@
-PRINTF PROJECT
-0x11. C - printf
-
-
+We are going to work as team.Collaborators are: Meriem Boussaid and Kawthar Ikram Khezour
