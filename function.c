@@ -1,27 +1,31 @@
 #include "main.h"
 
 /**
- * convert - converts number and base into string
- * @num: input number
- * @base: input base
- * @lowercase: flag if hexa values need to be lowercase
- * Return: result string
+ * convert - Converts an integer to a string in a specified base
+ * @num: The input integer to convert
+ * @base: The base for conversion (e.g., decimal, binary, octal)
+ * @lowercase: A flag indicating whether letters should be lowercase
+ *
+ * Return: The resulting string
  */
-char *convert(unsigned long int num, int base, int lowercase)
+char *convert(unsigned int num, int base, int lowercase)
 {
-	static char *rep;
-	static char buffer[50];
-	char *ptr;
+    static char *rep;
+    static char buffer[50];
+    char *ptr;
 
-	rep = (lowercase)
-		? "0123456789abcdef"
-		: "0123456789ABCDEF";
-	ptr = &buffer[49];
-	*ptr = '\0';
-	do {
-		*--ptr = rep[num % base];
-		num /= base;
-	} while (num != 0);
+    rep = (lowercase)
+        ? "0123456789abcdefghijklmnopqrstuvwxyz"
+        : "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	return (ptr);
+    ptr = &buffer[49];
+    *ptr = '\0';
+
+    do {
+        *--ptr = rep[num % base];
+        num /= base;
+    } while (num != 0);
+
+    return ptr;
 }
+
