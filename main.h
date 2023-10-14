@@ -32,6 +32,6 @@ typedef struct _format
 char type;
 int (*f)(va_list);
 } format;
-#endif
 
+#endif
 
