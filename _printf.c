@@ -1,56 +1,158 @@
-#include "main.h"
-#include <unistd.h>
+#include <stdarg.h>
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * _printf - Our custom printf function.
- * @format: The format string to print.
- * @...: Variable number of arguments.
- * Return: The number of characters printed.
+ * _printf - print variable length of arguments with certain format
+ * @format: print format
+ * @...: variable length of printable arguments
+ *
+ * Return: number of printed characters
  */
 int _printf(const char *format, ...)
 {
-    va_list args;
-    int printed_chars = 0;
-    int i = 0;
+	int count = 0, i = 0, isSpecial = 0, temp;
+	va_list printargs;
+	char pChar, tempChar;
 
-    va_start(args, format);
+	va_start(printargs, format);
+	while (format[i] != '\0')
+	{
+		tempChar = format[i];
+		if (!isSpecial && tempChar == '\\')
+		{
+			isSpecial = 1;
+			continue;
+		}
 
-    if (format == NULL)
-        return (-1);
+		if (isSpecial)
+		{
+			pChar = tempChar == '\\' ? '\\' : tempChar == 'n' ? '\n' : tempChar == 't' ? '\t' : 0;
+			if (pChar == 0)
+			{
+				_putchar('\\');
+				_putchar(tempChar);
+			} else
+			{
+				_putchar(pChar);
+			}
+			isSpecial = 0;
+		}
+		if (tempChar == '%')
+		{
+			temp = resolve_format(format[i + 1], printargs);
+			if (temp <= 0)
+				return (-1);
+			count += temp;
+			i += 2;
+		} else
+		{
+			_putchar(tempChar);
+			i++;
+			count++;
+		}
+	}
 
-    while (format && format[i])
-    {
-        if (format[i] != '%')
-        {
-            write(1, &format[i], 1);
-            printed_chars++;
-        }
-        else
-        {
-            i++;
-            if (format[i] == 'c')
-            {
-                char c = va_arg(args, int);
-                write(1, &c, 1);
-                printed_chars++;
-            }
-            else if (format[i] == 's')
-            {
-                char *str = va_arg(args, char *);
-                write(1, str, strlen(str));
-                printed_chars += strlen(str);
-            }
-            else if (format[i] == '%')
-            {
-                write(1, "%", 1);
-                printed_chars++;
-            }
-        }
-        i++;
-    }
+	return (count);
+}
 
-    va_end(args);
+/**
+ * resolve_format - check format and print values
+ * @c: character to check
+ * @printargs: variable arguments to print
+ *
+ * Return: number of printed characters
+ */
+int resolve_format(char c, va_list printargs)
+{
+	int i = 0;
 
-    return (printed_chars);
+	if (c == '%')
+	{
+		_putchar(c);
+		i++;
+	} else if (c == 'c')
+	{
+		_putchar(va_arg(printargs, int));
+		i++;
+	} else if (c == 's')
+	{
+		i = print_string(va_arg(printargs, char *));
+	} else if (c == 'd' || c == 'i')
+	{
+		i = print_number(va_arg(printargs, int), 0);
+	} else if (c == 'u')
+	{
+		i = print_unsigned_number(va_arg(printargs, unsigned int), 0);
+	} else
+	{
+		_putchar('%');
+		_putchar(c);
+		i += 2;
+	}
+
+	return (i);
+}
+
+/**
+ * print_string - print string characters
+ * @s: character pointer to print
+ *
+ * Return: number of printed characters
+ */
+int print_string(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	return (i);
+}
+
+/**
+ * print_number - print numbers
+ * @d: number to print
+ * @i: chrrent printed count
+ *
+ * Return: number of printed number characters
+ */
+int print_number(int d, int i)
+{
+	if (d < 0)
+	{
+		_putchar('-');
+		d = d * -1;
+		i++;
+	}
+
+	if (d > 0)
+	{
+		i++;
+		print_number(d / 10, i);
+		_putchar('0' + d % 10);
+	}
+	return (i);
+}
+
+/**
+ * print_unsigned_number - prints unsigned numbers
+ * @d: number to print
+ * @i: current printed count
+ *
+ * Return: printed count
+ */
+int print_unsigned_number(unsigned int d, int i)
+{
+	if (d > 0)
+	{
+		i++;
+		print_number(d / 10, i);
+		_putchar('0' + d % 10);
+	}
+
+	return (i);
 }
 
