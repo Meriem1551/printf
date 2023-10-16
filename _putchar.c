@@ -1,36 +1,33 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character
- * @c: The character to print
+ * _putchar - Writes a character to standard output (stdout).
  *
- * Return: On success 1.
- * On error, -1 is returned.
+ * Writes the specified character 'c' to the standard output (stdout).
+ *
+ * @c: The character to print.
+ * Return: 1 on success, -1 on error with errno set.
  */
 int _putchar(char c)
 {
-	return (buffer(c));
+	return (write(1, &c, 1));
 }
 
 /**
- * buffer - Save the character in a buffer
- * @c: Character
+ * _puts - Prints a null-terminated string to stdout.
  *
- * Return: 1
- **/
-int buffer(char c)
+ * Prints the characters in the null-terminated
+ * and returns the count of characters printed.
+ *
+ * @str: Pointer to the string to print.
+ * Return: The count of characters written to the output stream.
+ */
+int _puts(char *str)
 {
-	static char buffering[1024];
-	static int i;
+	register short i;
 
-	if (c == -1 || i == 1024)
-	{
-		write(1, buffering, i);
-		i = 0;
-	}
-
-	if (c != -1)
-		buffering[i++] = c;
-
-	return (1);
+	for (i = 0; str[i]; i++)
+		_putchar(str[i]);
+	return (i);
 }
+
