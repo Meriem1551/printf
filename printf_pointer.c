@@ -1,13 +1,9 @@
 #include "main.h"
+
 /**
- * printf_pointer - Print a hexadecimal memory address.
- *
- * This function takes a pointer argument, converts it to its hexadecimal
- * representation, and prints it as a memory address. It returns the
- * number of characters printed.
- *
- * @val: The argument containing the memory address to be printed.
- * Return: The number of characters printed in the hexadecimal memory address.
+ * printf_pointer - prints an hexgecimal number.
+ * @val: arguments.
+ * Return: counter.
  */
 int printf_pointer(va_list val)
 {
@@ -33,3 +29,4 @@ int printf_pointer(va_list val)
 	b = printf_hex_aux(a);
 	return (b + 2);
 }
+
