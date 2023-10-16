@@ -20,4 +20,3 @@ unsigned int handle_buffer(char *buf, char c, unsigned int ibuf)
 	ibuf++;
 	return (ibuf);
 }
-
