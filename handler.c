@@ -1,80 +1,26 @@
 #include "main.h"
 
 /**
- * handler - Format controller
- * @str: String format
- * @list: List of arguments
+ * handle_buffer - Concatenates characters to the buffer
  *
- * Return: Total size of arguments with the total size of the base string
- **/
-int handler(const char *str, va_list list)
+ * This function appends the given character to a buffer and updates the buffer's
+ * index. It is typically used for building strings or sequences of characters.
+ *
+ * @param buf: A pointer to the buffer where the character should be added.
+ * @param c: The character to concatenate to the buffer.
+ * @param ibuf: The current index of the buffer pointer.
+ * @return: The updated index of the buffer pointer.
+ */
+
+unsigned int handl_buf(char *buf, char c, unsigned int ibuf)
 {
-	int size, i, aux;
-
-	size = 0;
-	for (i = 0; str[i] != 0; i++)
-	{
-		if (str[i] == '%')
-		{
-			aux = percent_handler(str, list, &i);
-			if (aux == -1)
-				return (-1);
-
-			size += aux;
-			continue;
-		}
-
-		_putchar(str[i]);
-		size = size + 1;
-	}
-
-
-	return (size);
+        if (ibuf == 1024)
+        {
+                print_buf(buf, ibuf);
+                ibuf = 0;
+        }
+        buf[ibuf] = c;
+        ibuf++;
+        return (ibuf);
 }
 
-/**
- * percent_handler - Controller for percent format
- * @str: String format
- * @list: List of arguments
- * @i: counter
- *
- * Return: Size of the numbers of elements printed
- **/
-int percent_handler(const char *str, va_list list, int *i)
-{
-	int size, j, number_formats;
-	format formats[] = {
-		{'s', print_string}, {'c', print_char},
-		{'d', print_integer}, {'i', print_integer},
-		{'b', print_binary}, {'u', print_unsigned},
-		{'o', print_octal}, {'x', print_hexadecimal_low},
-		{'X', print_hexadecimal_upp}, {'p', print_pointer},
-		{'r', print_rev_string}, {'R', print_rot}
-	};
-
-	*i = *i + 1;
-
-	if (str[*i] == '\0')
-		return (-1);
-
-	if (str[*i] == '%')
-	{
-		_putchar('%');
-		return (1);
-	}
-
-	number_formats = sizeof(formats) / sizeof(formats[0]);
-	for (size = j = 0; j < number_formats; j++)
-	{
-		if (str[*i] == formats[j].type)
-		{
-			size = formats[j].f(list);
-			return (size);
-		}
-
-	}
-
-	_putchar('%'), _putchar(str[*i]);
-
-	return (2);
-}
