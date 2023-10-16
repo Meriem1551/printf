@@ -18,7 +18,7 @@ int printf_hex(va_list val)
 		num /= 16;
 		count++;
 	}
-	counter++;
+	count++;
 	array = malloc(count * sizeof(int));
 
 	for (i = 0; i < count; i++)
