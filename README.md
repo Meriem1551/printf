@@ -84,7 +84,9 @@ hese lies when they see them in print</h4>
 - r : prints the reversed string
                                                                                     
 <h4>14. The flood of print has turned reading into a process of gulping rather than savoring </h4>
- Handle the following custom conversion specifier:                                   
+ <p>Handle the following custom conversion specifier:</p>
+ 
+ - R: prints the rot13'ed string
                                                                                     
 <h4>15. * All the above options work well together. </h4>
 
