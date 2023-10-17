@@ -1,10 +1,10 @@
 
 <h1>0x11. C - printf team project</h1> .
 
-💻
 
+  <h3>Mandatory Tasks.
 
-  <h3>Mandatory Tasks</h3>
+💻 .</h3>
 
 <h4>0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
 a Spur for life</h4>                                                               
