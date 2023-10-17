@@ -33,7 +33,9 @@ a Spur for life</h4>
 - You don’t have to handle the length modifiers
                                                                                     
 <h4>4. Nothing in fine print is ever good news</h4>
-Use a local buffer of 1024 chars in order to call write as little as possible.      
+<p>Use a local buffer of 1024 chars in order to call write as little as possible.</p>
+
+- Use a local buffer of 1024 chars in order to call write as little as possible.
                                                                                     
 <h4>5. My weakness is wearing too much leopard print </h4>                                   
 Handle the following custom conversion specifier:                                   
