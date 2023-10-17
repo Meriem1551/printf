@@ -1,4 +1,7 @@
-**0x11. C - printf team project**
+
+# 🚀 Printf Team Project 🖨️
+
+Welcome to the Printf Team Project! This project showcases our custom implementation of the printf function, offering exciting features and custom conversion specifiers. Get ready for a printf experience like no other! 🎉
 
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
  a Spur for life                                                                    
