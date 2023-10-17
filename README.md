@@ -113,7 +113,7 @@ All files will be compiled with gcc 4.8.4 using the flags: -Wall -Werror -Wextra
 * va_arg (man 3 va_arg)
 * _putchar(char c)
 
-  ## Function prototypes
+  ## Function prototypes (main.h)
 
 - int printf_pointer(va_list val);
 - int printf_hex_aux(unsigned long int num);
