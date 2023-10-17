@@ -60,7 +60,7 @@ hese lies when they see them in print</h4>
 - '#'
                                                                                     
 <h4>8. Sarcasm is lost in print </h4>                                                        
-Handle the following length modifiers for non-custom conversion specifiers:         
+<p>Handle the following length modifiers for non-custom conversion specifiers:</p>         
                                                                                     
 l                                                                                   
 h                                                                                   
