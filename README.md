@@ -56,5 +56,5 @@ ring Handle the following custom conversion specifier:
 15. * All the above options work well together. 
 
 <h2>Contributors are:</h2>
-Meriem Boussaid
-Ikram Kawthar Khezour
+<p>Meriem Boussaid</p>  
+<P>Ikram Kawthar Khezour</P>
