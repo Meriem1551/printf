@@ -67,7 +67,7 @@ hese lies when they see them in print</h4>
 - Conversion specifiers to handle: d, i, u, o, x, X                                   
                                                                                     
 <h4>9. Print some money and give it to us for the rain forests</h4>                          
-Handle the field width for non-custom conversion specifiers.                        
+<p>Handle the field width for non-custom conversion specifiers.  </p>                      
                                                                                     
 <h4>10. The negative is the equivalent of the composer's score, and the print the perfor mance </h4>                                                                            
 Handle the precision for non-custom conversion specifiers.       
