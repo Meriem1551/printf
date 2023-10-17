@@ -2,9 +2,7 @@
 <h1>0x11. C - printf team project</h1> .
 
 
-  <h3>Mandatory Tasks.
-
-💻 .</h3>
+  <h3>Mandatory Tasks</h3>
 
 <h4>0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
 a Spur for life</h4>                                                               
@@ -144,7 +142,7 @@ All files will be compiled with gcc 4.8.4 using the flags: -Wall -Werror -Wextra
 - int _printf(const char *format, ...);
   
     
-<h2>Contributors are:</h2>
+<h2>Contributors are:</h2>.
 
  - Meriem Boussaid
  - Ikram Kawthar Khezour
