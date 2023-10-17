@@ -61,5 +61,7 @@ Handle the following custom conversion specifier:
                                                                                     
 <h4>15. * All the above options work well together. </h4>
 
-<h3>Contributors are:</h3>
- Meriem BoussaidIkram Kawthar Khezour
+<h2>Contributors are:</h2>
+
+ - Meriem Boussaid
+ - Ikram Kawthar Khezour
