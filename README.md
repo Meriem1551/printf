@@ -80,7 +80,8 @@ hese lies when they see them in print</h4>
 <p>Handle the - flag character for non-custom conversion specifiers.</p>                   
                                                                                     
 <h4>13. Print is the sharpest and the strongest weapon of our party </h4>                  
-Handle the following custom conversion specifier:                                   
+<p>Handle the following custom conversion specifier:</p>
+- r : prints the reversed string
                                                                                     
 <h4>14. The flood of print has turned reading into a process of gulping rather than savoring </h4>
  Handle the following custom conversion specifier:                                   
