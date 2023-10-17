@@ -15,7 +15,7 @@ a Spur for life</h4>
 - You don’t have to handle precision
 - You don’t have to handle the length modifiers
 
-  <h3>Advanced Tasks</h3>
+<h3>Advanced Tasks</h3>
 
 <h4>2. With a face like mine, I do better in print</h4>                                      
 <p>Handle the following custom conversion specifiers:</p> 
