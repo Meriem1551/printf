@@ -73,7 +73,7 @@ hese lies when they see them in print</h4>
 <p>Handle the precision for non-custom conversion specifiers. </p>      
 
 <h4>11. It's depressing when you're still around and your albums are out of print</h4>    
-Handle the 0 flag character for non-custom conversion specifiers.                   
+<p>Handle the 0 flag character for non-custom conversion specifiers.</p>                   
                                                                                     
 <h4>12. Every time that I wanted to give up, if I saw an interesting textile, print what
  ever, suddenly I would see a collection  </h4>                                         
