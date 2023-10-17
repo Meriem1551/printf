@@ -1,6 +1,8 @@
 
-<h1>0x11. C - printf team project</h1>
->>>>>>> 750a7e764ad3ae4bf44cca49a52c98b05e3f6152
+<h1>0x11. C - printf team project</h1> .
+
+💻
+
 
   <h3>Mandatory Tasks</h3>
 
