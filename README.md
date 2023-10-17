@@ -77,7 +77,7 @@ hese lies when they see them in print</h4>
                                                                                     
 <h4>12. Every time that I wanted to give up, if I saw an interesting textile, print what
  ever, suddenly I would see a collection  </h4>                                         
-Handle the - flag character for non-custom conversion specifiers.                   
+<p>Handle the - flag character for non-custom conversion specifiers.</p>                   
                                                                                     
 <h4>13. Print is the sharpest and the strongest weapon of our party </h4>                  
 Handle the following custom conversion specifier:                                   
