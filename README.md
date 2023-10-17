@@ -21,7 +21,16 @@ a Spur for life</h4>
 - b: the unsigned int argument is converted to binary
                                                                                     
 <h4>3. What one has not experienced, one will never understand in print</h4>               
-Handle the following conversion specifiers:                                         
+<p>Handle the following conversion specifiers:</p>
+
+- u
+- o
+- x
+- X
+- You don’t have to handle the flag characters
+- You don’t have to handle field width
+- You don’t have to handle precision
+- You don’t have to handle the length modifiers
                                                                                     
 <h4>4. Nothing in fine print is ever good news</h4>
 Use a local buffer of 1024 chars in order to call write as little as possible.      
