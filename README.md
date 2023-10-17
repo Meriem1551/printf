@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 
-# 🚀 Printf Team Project 🖨️
-
-Welcome to the Printf Team Project! This project showcases our custom implementation of the printf function, offering exciting features and custom conversion specifiers. Get ready for a printf experience like no other! 🎉
-=======
 <h1>0x11. C - printf team project</h1>
 >>>>>>> 750a7e764ad3ae4bf44cca49a52c98b05e3f6152
 
