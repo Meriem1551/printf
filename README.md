@@ -96,6 +96,11 @@ hese lies when they see them in print</h4>
 All files will be compiled with gcc 4.8.4 using the flags: -Wall -Werror -Wextra -pedantic
 
     gcc -Wall -Werror -Wextra -pedantic *.c
+
+  ### Betty coding style:
+
+  All files are written in C and follows the Betty coding style for Holberton School. For more detail, check this page:
+  [Betty style documentation](https://github.com/holbertonschool/Betty/wiki)
     
 <h2>Contributors are:</h2>
 
