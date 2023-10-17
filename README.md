@@ -38,7 +38,10 @@ a Spur for life</h4>
 - Use a local buffer of 1024 chars in order to call write as little as possible.
                                                                                     
 <h4>5. My weakness is wearing too much leopard print </h4>                                   
-Handle the following custom conversion specifier:                                   
+<p>Handle the following custom conversion specifier: </p>
+
+- S : prints the string.
+- Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
                                                                                     
 <h4>6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
 hese lies when they see them in print</h4>                                  
