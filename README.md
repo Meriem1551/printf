@@ -92,6 +92,11 @@ hese lies when they see them in print</h4>
                                                                                     
 <h4>15. * All the above options work well together. </h4>
 
+<h2>Compilation:</h2>
+All files will be compiled with gcc 4.8.4 using the flags: -Wall -Werror -Wextra -pedantic
+
+    gcc -Wall -Werror -Wextra -pedantic *.c
+    
 <h2>Contributors are:</h2>
 
  - Meriem Boussaid
