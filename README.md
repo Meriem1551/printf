@@ -53,7 +53,11 @@ hese lies when they see them in print</h4>
 - You don’t have to handle the length modifiers
                                                                                     
 <h4>7. The big print gives and the small print takes away </h4>                              
-Handle the following flag characters for non-custom conversion specifiers:          
+<p>Handle the following flag characters for non-custom conversion specifiers:</p>
+
+- '+'
+- space
+- '#'
                                                                                     
 <h4>8. Sarcasm is lost in print </h4>                                                        
 Handle the following length modifiers for non-custom conversion specifiers:         
