@@ -62,9 +62,9 @@ hese lies when they see them in print</h4>
 <h4>8. Sarcasm is lost in print </h4>                                                        
 <p>Handle the following length modifiers for non-custom conversion specifiers:</p>         
                                                                                     
-l                                                                                   
-h                                                                                   
-Conversion specifiers to handle: d, i, u, o, x, X                                   
+- l                                                                                   
+- h                                                                                   
+- Conversion specifiers to handle: d, i, u, o, x, X                                   
                                                                                     
 <h4>9. Print some money and give it to us for the rain forests</h4>                          
 Handle the field width for non-custom conversion specifiers.                        
