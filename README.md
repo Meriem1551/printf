@@ -45,7 +45,12 @@ a Spur for life</h4>
                                                                                     
 <h4>6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
 hese lies when they see them in print</h4>                                  
-Handle the following conversion specifier: p.                                       
+<p>Handle the following conversion specifier: p.</p>  
+
+- You don’t have to handle the flag characters
+- You don’t have to handle field width
+- You don’t have to handle precision
+- You don’t have to handle the length modifiers
                                                                                     
 <h4>7. The big print gives and the small print takes away </h4>                              
 Handle the following flag characters for non-custom conversion specifiers:          
