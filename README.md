@@ -16,7 +16,7 @@ a Spur for life</h4>
 - You don’t have to handle the length modifiers
 
 <h4>2. With a face like mine, I do better in print</h4>                                      
-Handle the following custom conversion specifiers:                                  
+<p>Handle the following custom conversion specifiers:</p>                                
                                                                                     
 <h4>3. What one has not experienced, one will never understand in print</h4>               
 Handle the following conversion specifiers:                                         
